@@ -241,6 +241,13 @@ def on_release(key):
                 keyboardC.release(Key.backspace)
                 keyboardC.press('à')
                 keyboardC.release('à')
+			if (lastkeys[1] == 'A'):
+                keyboardC.press(Key.backspace)
+                keyboardC.release(Key.backspace)
+                keyboardC.press(Key.backspace)
+                keyboardC.release(Key.backspace)
+                keyboardC.press('À')
+                keyboardC.release('À')
     except AttributeError:
         if ((key == keyboard.Key.shift_r) or (key == keyboard.Key.shift)):
             pressed_time = time.time()
